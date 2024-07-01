@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #000814;
+    color: rgb(222,222,222);
+
+      
+      
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+#bar{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 4vmin;
+    border-radius: 2rem;
+    height: 9vmin;
+    width: 65%;
+    padding-left: 10px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 8, 20, 0.5); 
+    opacity: 1;
+    transition: box-shadow 0.3s ease-in-out;
+   
+}
+.glowing-shadow{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+#icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 20vmin;
+}
+#linked-in , #mail ,#mode{
+    font-size: 36px;
+}
+#intro{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    display: flex;
+    align-items: flex-end;
+    height: 60vmin;
+    width: 86.6%;
+
+}
+
+.R-apps{
+    background-color: #001219;
+    border-radius: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.6s ease, transform 0.6s ease;
+height: 50vmin;
+width: 43vmin;
+}
+
+.R-apps:hover{
+    transform: rotate(15deg); 
+}
+.L-apps{
+    background-color: #001219;
+    border-radius: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.6s ease, transform 0.6s ease;
+height: 50vmin;
+width: 43vmin;
+}
+.L-apps:hover{
+    transform: rotate(-15deg); 
+}
+.img-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vmin;
+    border-radius: 2rem;
+    height: 20vmin;
+    width: 35vmin;
+    transition: box-shadow 0.5s ease; 
+}
+
+
+#text{
+    margin-bottom: 2vmin;
+    height: 20vmin;
+    width: 32vmin;
+}
+#up-text{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    height: 10vmin;
+    width: auto;
+
+}
+.down-text{
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.3);
+    height: 10vmin;
+    width: auto;
+}
+#socials-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 6vmin;
+    height: 130vmin;
+    width: 100%;
+}
+#right-container,#left-container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vmin;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#left-container{
+    margin-top: 30vmin;
+}
+#instagram{
+    font-size:80px;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+#instagram:hover{
+    box-shadow: 0 0 10px rgba(131, 58, 180, 0.5), 0 0 20px rgba(253, 29, 29, 0.5), 0 0 30px rgba(252, 176, 69, 0.5);
+}
+#facebook{
+    background-color: #1877f2;
+    font-size:80px;
+}
+#facebook:hover{
+    box-shadow: 0 0 10px rgba(24, 119, 242, 0.5), 0 0 20px rgba(24, 119, 242, 0.5), 0 0 30px rgba(24, 119, 242, 0.5); /* Glowing effect on hover */
+}
+#twitter{
+    background-color: #1da1f2;
+    font-size:80px;
+}
+#twitter:hover{
+    box-shadow: 0 0 10px rgba(29, 161, 242, 0.5), 0 0 20px rgba(29, 161, 242, 0.5), 0 0 30px rgba(29, 161, 242, 0.5); 
+}
+#github{
+    font-size: 80px;
+    background: linear-gradient(to right, #0d1117, #0d1117);
+}
+#github:hover{
+   
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5); /* Glowing effect on hover */
+}
+
+#projects{
+    /* padding-left: 4vmin; */
+    width: 100%;
+    height: 58vmin;
+    display: flex;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* gap: 4vmin; */
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4rem;
+    /* overflow-x: auto; */
+
+    /* border: 10px soild white; */
+    /* background-color: white; */
+    /* background: linear-gradient(135deg,rgba(136,29,255,0.6)0%,transparent 70%); */
+    background: linear-gradient(135deg, rgba(186, 0, 255, 0.8) 0%,transparent 70%);
+    /* background: linear-gradient(135deg, rgba(186, 0, 255, 0.8) 0%, rgba(255, 105, 180, 0.8) 70%); */
+
+}
+#projects::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: none;
+
+}
+.innerProjects{
+    /* background-image: url(/portfolio/Screenshot\ 2024-06-27\ 140539.png);  */
+    background-size: contain;
+    /* background-size: contain; */
+    width: 30%;
+    height: 25vmin;
+    /* height: auto; */
+    background-color: #000814;
+    /* position: relative; */
+    border-radius: 1rem;
+
+    justify-content: space-evenly;
+     /* border: 1px solid black; */
+}
+
+/* progres bar */
+
+.progress-container {
+    position: absolute;
+  top: 120vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 70vmin;
+    width: 60%;
+    /* border: 1px solid white; */
+  }
+  .upper-icons, .lower-icons{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+
+    /* align-items: center; */
+  }
+.precentage{
+    color:#777;
+    font-weight:700;
+    font-size:40px;
+    font-family:'Roboto',sans-serif;
+    transition:0.5s;
+    opacity: 0;
+
+}
+.circle:hover .precentage{
+    opacity: 1;
+}
+
+  .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000814;
+    border-radius: 50%;
+  }
+
+  .circle i,  .circle span {
+    position: absolute;
+    font-size: 4rem;
+    z-index: 10;
+  }
+
+  .circle:hover i{
+    opacity: 0;
+  }
+  .circle:hover span{
+    opacity: 0;
+  }
+
+
+  .circle.java i {
+    color: #0077b6;
+  }
+  .circle.sql i {
+    color: #f29111;
+  }
+  .circle.python i {
+    color: #306998;
+  }
+  .circle.flutter span {
+    color: #48cae4;
+  }
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #000814;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+  }
+  svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+  .circle.java svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #0077b6;
+  }
+  .circle.sql svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #f29111;
+  }
+  .circle.python svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #306998;
+  }
+  .circle.flutter svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke: #48cae4;
+  }
+  .B-circle {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .B-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    height: 75vmin;
+    width: 75vmin;
+    z-index: -1;
+    /* top: -75vmin; */
+  }
+  .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #031926;
+    height: 75vmin;
+    width: 75vmin;
+    border-radius: 50%;
+  }
+  .inner {
+    height: 70vmin;
+    width: 70vmin;
+    border-radius: 50%;
+    background: #000814;
+  }
+
+  #java,#python,#sql,#flutter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #java p,#python p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    height: 8vmin;
+    width: 15vmin;
+    background: linear-gradient(to left, #000000, #000814);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+
+  }
+  #sql p,#flutter p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    height: 8vmin;
+    width: 15vmin;
+    background: linear-gradient(to right, #000000, #000814);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+
+  }

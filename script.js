@@ -76,9 +76,42 @@ document.addEventListener("scroll", () => {
     }
 });
 
-// let circles=document.querySelectorAll(".circle");
-// circles.forEach((eachCircle)=>{
-//     eachCircle.addEventListener("mouseover",()=>{
-//         document.getElementById
-//     });
-// });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const nameElement = document.getElementById('name');
+    const introContainer = document.getElementById('intro');
+    const projectsContainer = document.getElementById('projects');
+    const progressContainer = document.querySelector('.progress-container');
+    const socialsContainer = document.getElementById('socials-container');
+
+    const observerOptions = {
+        root:null,
+        rootMargin: '20px',
+        threshold: 0.5 // Adjust this value as needed
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target===introContainer){
+                    nameElement.textContent='THAPA';
+                }
+                 else if (entry.target === projectsContainer) {
+                    nameElement.textContent = 'PROJECTS';
+                } else if (entry.target === progressContainer) {
+                    nameElement.textContent = 'MY-SKILLS';
+                } else if (entry.target === socialsContainer) {
+                    nameElement.textContent = 'SOCIALS PLATTFROMS';
+                }
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    observer.observe(introContainer);
+    observer.observe(projectsContainer);
+    observer.observe(progressContainer);
+    observer.observe(socialsContainer);
+});

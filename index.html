@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="nishant_avatar_icon" href="tongue_emojie.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nishantthapa</title>
     <link rel="stylesheet" href="style.css">
@@ -43,22 +44,75 @@
 
 
         <div id="intro">
-            <h1>i'm nishant thapa<span style='font-size:50px;'>&#9996;</span></h1>
-            <span id="learning"> Constantly learning and <br> exploring new technologies <br> to satisfy my curiosity.</span>
+          
+                <h1>i'm nishant thapa</span></h1>
+                <span id="learning"> Constantly learning and <br> exploring new technologies <br> to satisfy my
+                    curiosity.</span>
+        
+          
+                <img id="hi" src="hi_emoji.png" alt="">
+               <img id="flower" src="grass_FLOWER.png" alt="">
+          
         </div>
 
 
         <div id="projects">
-            <div id="upper-projects">
-                <div class="innerProjects"> </div>
-                <div class="innerProjects"> </div>
-                <div class="innerProjects"> </div>
 
+
+
+            <div id="upper-projects">
+                <div class="project">
+                    <img src="/Apple-Weather-app.webp" alt="Project Image 1">
+                    <i class="info-icon" onclick="showDescription(this)"><i class="fa-solid fa-info"></i></i>
+                    <div class="project-description">A Python terminal app providing real-time weather updates including
+                        temperature, time, and humidity for specified locations.</div>
+                </div>
+                <div class="project">
+                    <img src="/Best Password Managers Gear GettyImages-1408198405.webp" alt="Project Image 2">
+                    <i class="info-icon" onclick="showDescription(this)"><i class="fa-solid fa-info"></i></i>
+                    <div class="project-description">
+                        <p>A Python terminal app for securely managing user logins allowing creation of usernames,
+                            passwords, login,and password resets</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/Data-encryption-decryption-process.png" alt="Project Image 2">
+                    <i class="info-icon" onclick="showDescription(this)"><i class="fa-solid fa-info"></i></i>
+                    <div class="project-description">
+                        <p>A Python terminal app for secure text encryption and decryption, ensuring data
+                            confidentiality and reliable information retrieval.</p>
+                    </div>
+                </div>
             </div>
+
+
+
+
             <div id="lower-projects">
-                <div class="innerProjects"> </div>
-                <div class="innerProjects"> </div>
-                <div class="innerProjects"> </div>
+                <div class="project">
+                    <img src="/Rock-paper-scissors.svg.png" alt="Project Image 2">
+                    <i class="info-icon" onclick="showDescription(this)"><i class="fa-solid fa-info"></i></i>
+                    <div class="project-description">
+                        <p>Python game where players face the computer in rock-paper-scissors; losing triggers a
+                            5-second countdown before the computer turns off.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/chatbot.jpg" alt="Project Image 2">
+                    <i class="info-icon" onclick="showDescription(this)"><i class="fa-solid fa-info"></i></i>
+                    <div class="project-description">
+                        <p>HTML/CSS/JS proto-type chatbot which can tell you facts, jokes, and do calculations, and also
+                            date/time info interactions.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/Screenshot 2024-07-05 155700.png" alt="Project Image 2">
+                    <i class="info-icon" onclick="showDescription(this)"><i class="fa-solid fa-info"></i></i>
+                    <div class="project-description">
+                        <p>Web based game of TIC-TAC-TOE , player can pick his/her desire color to fill the boxes.</p>
+                    </div>
+                </div>
+
 
             </div>
 
@@ -74,78 +128,58 @@
 
         <!-- progressbar -->
         <div class="progress-container">
-
-            <div class="upper-icons">
-                <div id="java">
-                    <p>JAVA</p>
-                    <div class="circle java">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <i class="fab fa-java"></i>
-                        <div class="precentage">70%</div>
-                    </div>
+            <div id="java" class="progress-bar">
+                <div class="icon">
+                    <i class="fab fa-java"></i>
                 </div>
-
-                <div id="sql">
-                    <div class="circle sql">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <i class="fas fa-database"></i>
-                        <div class="precentage">70%</div>
-                    </div>
-                    <p>SQL</p>
-                </div>
+                <div class="progress" style="width: 70%;">Java 70%</div>
             </div>
-
-
-            <div class="lower-icons">
-                <div id="python">
-                    <p>PYTHON</p>
-                    <div class="circle python">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <i class="fab fa-python"></i>
-                        <div class="precentage">80%</div>
-                    </div>
+            <div id="python" class="progress-bar">
+                <div class="icon">
+                    <i class="fab fa-python"></i>
                 </div>
-                <div id="flutter">
-                    <div class="circle flutter">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <span class="material-symbols-outlined">
-                            flutter
-                        </span>
-                        <div class="precentage">50%</div>
-                    </div>
-                    <P>FLUTTER</P>
-                </div>
-
-
-
+                <div class="progress" style="width: 80%;">Python 80%</div>
             </div>
-        </div>
-        <div class="B-circle">
-            <div class="outer">
-                <div class="inner">
+            <div id="sql" class="progress-bar">
+                <div class="icon">
+                    <i class="fas fa-database"></i>
                 </div>
+                <div class="progress" style="width: 60%;">SQL 60%</div>
             </div>
-        </div>
-
-
-        <!-- needed for the responsive -->
-        <div class="B-circle2">
-            <div class="outer2">
-                <div class="inner2">
+            <div id="flutter" class="progress-bar">
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        flutter
+                    </span>
                 </div>
+                <div class="progress" style="width: 50%;">Flutter 50%</div>
             </div>
+            <div id="html" class="progress-bar">
+                <div class="icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="progress" style="width: 80%;">HTML 80%</div>
+            </div>
+            <div id="css" class="progress-bar">
+                <div class="icon">
+                    <i class="fab fa-css3"></i>
+                </div>
+                <div class="progress" style="width: 60%;">CSS 60%</div>
+            </div>
+            <div id="javascript" class="progress-bar">
+                <div class="icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="progress" style="width: 70%;">JavaScript 70%</div>
+            </div>
+            <div id="django" class="progress-bar">
+                <div class="icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="progress" style="width: 50%;">Python Django 50%</div>
+            </div>
+    
+           
         </div>
 
 
@@ -215,6 +249,18 @@
         </div>
 
 
+
+
+
+        <div id="main-footer">
+            <footer id="footer">
+
+                <span class="connect">Connect</span>
+                <img class="footer_emoji" src="footer_emoji.png" alt="">
+                <span class="withme"> with Me !</span>
+            </footer>
+             <img class="grass" src="grss.png" alt="">
+        </div>
 
 
 

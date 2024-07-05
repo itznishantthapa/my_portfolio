@@ -115,3 +115,24 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(progressContainer);
     observer.observe(socialsContainer);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const icons = document.querySelectorAll('.info-icon');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function() {
+            const project = this.closest('.project');
+            const projectDescription = project.querySelector('.project-description');
+
+            // Hide all other project descriptions
+            const allDescriptions = document.querySelectorAll('.project-description');
+            allDescriptions.forEach(desc => {
+                if (desc !== projectDescription) {
+                    desc.style.display = 'none';
+                }
+            });
+
+            // Toggle display of clicked project description
+            projectDescription.style.display = projectDescription.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});

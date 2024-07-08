@@ -108,6 +108,8 @@ document.getElementById("mode").addEventListener("click", () => {
         progressBars.forEach((bar)=>{
             bar.style.backgroundColor = "#051923";
         });
+        
+        document.getElementById("container").style.boxShadow="-10px 0 10px rgba(0, 0, 0, 0.2),  -20px 0 20px rgba(0, 0, 0, 0.15),  -30px 0 30px rgba(0, 0, 0, 0.1),  10px 0 10px rgba(0, 0, 0, 0.2),20px 0 20px rgba(0, 0, 0, 0.15), 30px 0 30px rgba(0, 0, 0, 0.1) "
 
         modeTurn = false;
 

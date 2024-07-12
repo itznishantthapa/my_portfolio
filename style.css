@@ -75,7 +75,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
-  height: 4000px;
+  height: 600vh;
   box-shadow:
   -10px 0 10px rgba(0, 0, 0, 0.2),  
   -20px 0 20px rgba(0, 0, 0, 0.15),  
@@ -702,7 +702,7 @@ width: 80vmin;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 5000px;
+    height: 600vh;
     width: 100%;
     padding: 0 10px;
   }

@@ -689,7 +689,11 @@ width: 80vmin;
   opacity: 0;
 }
 
-
+#last-line{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2vmin;
+}
 
 
 
@@ -871,5 +875,8 @@ width: 80vmin;
 
   font-size: 40px;
 
+}
+#last-line{
+ display: none;
 }
 }

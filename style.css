@@ -133,6 +133,7 @@ body {
 #linked-in, #mail, #mode {
   font-size: 36px;
   transition:transform 0.4s ease;
+  cursor:pointer;
 }
 
 /* Intro styles */
